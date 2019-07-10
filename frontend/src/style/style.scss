@@ -1,0 +1,157 @@
+$backColor: #000;
+$fontColor: #fff;
+$backColor2: snow;
+$backColor4: #6f5a61;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $fontColor;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  background-color: $backColor4;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar li:hover {
+  background-color: #474d4b;
+}
+
+.navbar-nav li {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav a {
+  color: #ffba25;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-toggler-icon {
+  color: #ffba25;
+}
+
+@media (max-width: 600px) {
+  .navbar-nav {
+    display: block;
+  }
+}
+
+.img-responsive {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.85;
+  border: none;
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  color: $fontColor;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  padding: 1% 2%;
+  border: white solid 1px;
+  border-radius: 0%;
+  color: $fontColor;
+  background: transparent;
+}
+
+.btn:hover {
+  background: white;
+  color: orange;
+}
+
+.success {
+  position: absolute;
+  top: 20%;
+  color: $fontColor;
+}
+.success-head {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+.form {
+  position: absolute;
+  width: 100%;
+  display: block;
+  top: 30%;
+  left: 35%;
+  width: 50%;
+  margin: auto;
+  color: $fontColor;
+}
+
+.input {
+  margin: 2% 1%;
+  display: block;
+  border-radius: 0%;
+  border: white solid 1px;
+  color: white;
+  background-color: #5e5357;
+}
+
+.submit {
+  margin-left: 1%;
+}
+
+.submit:hover {
+  background-color: #5e5357;
+  border: #5e5357 solid 1px;
+}
+
+.about {
+  top: 30%;
+  position: absolute;
+  color: $fontColor;
+  background-color: #565552;
+  padding: 2% 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
+}
+
+.about .head {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  color: $fontColor;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  left: 20%;
+  margin-bottom: -90px;
+}
