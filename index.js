@@ -14,9 +14,6 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "frontend/build")));
 
-app.get("*", (req, res) => {
-  return res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
-});
 // app.get("/", (req, res) => {
 //   console.log("server request");
 //   return res.send("hello");
@@ -129,6 +126,11 @@ app.post("/pay/stripe", (req, res) => {
       res.send(data);
     }
   });
+});
+
+app.get("/", (req, res) => {
+  console.log("get request");
+  return res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
 });
 
 //listen

@@ -16,7 +16,7 @@ class stripe extends React.Component {
       amount: 100.0,
       token: token
     };
-    await Axios.post("/stripe", body)
+    await Axios.post("/pay/stripe", body)
       .then(data => {
         console.log("data:-", data);
         if (data === "error") {

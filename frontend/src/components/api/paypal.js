@@ -5,7 +5,7 @@ export default class paypal extends Component {
   onClick = () => {
     console.log("on click called");
     axios
-      .post("/paypal")
+      .post("http://localhost:4000/pay/paypal")
       .then(data => {
         console.log("data", data);
       })
