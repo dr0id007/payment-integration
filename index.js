@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // home route
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
+  return res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
 });
 // app.get("/", (req, res) => {
 //   console.log("server request");
