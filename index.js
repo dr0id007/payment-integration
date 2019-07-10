@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const path = require("path");
 const app = express();
 
 const paypal = require("paypal-rest-sdk");
@@ -10,6 +11,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // home route
+
+app.use(express.static(path.join(__dirname, "frontend/build")));
 
 app.get("*", (req, res) => {
   return res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
