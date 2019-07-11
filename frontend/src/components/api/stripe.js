@@ -18,7 +18,7 @@ class stripe extends React.Component {
     };
     await Axios.post("/pay/stripe", body)
       .then(data => {
-        console.log("data:-", data);
+        // console.log("data:-", data);
         if (data === "error") {
           this.setState({
             transaction: false,
@@ -30,7 +30,7 @@ class stripe extends React.Component {
             transaction: true,
             data: data
           });
-          console.log("transaction successful");
+          //  console.log("transaction successful");
         }
       })
       .catch(error => {
@@ -65,7 +65,9 @@ class stripe extends React.Component {
           stripeKey="pk_test_hqDW6qcom45k1OQFxNH8px6p00568oUzmT"
           label="Pay with 💳"
         >
-          <button className="btn mt-3">Pay with 💳</button>
+          <h3>
+            <button className="btn mt-3">Pay with 💳</button>
+          </h3>
         </Stripe>
       </div>
     );

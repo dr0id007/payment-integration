@@ -14,7 +14,7 @@ class banner extends Component {
       click: true
     });
     await axios
-      .post("http://localhost:4000/pay/paypal")
+      .get("http://localhost:4000/pay/paypal")
       .then(data => {
         console.log("data:-", data);
       })
@@ -30,9 +30,9 @@ class banner extends Component {
         <div className="banner-text">
           <h1>Hello</h1>
           <h1>WELCOME</h1>
-          <button className="btn btn-outline-default" onClick={this.onClick}>
+          {/* <button className="btn btn-outline-default" onClick={this.onClick}>
             Donate
-          </button>
+          </button> */}
           <Stripe />
         </div>
       </div>

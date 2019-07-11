@@ -48,7 +48,6 @@ a:hover {
   height: 100vh;
   opacity: 0.85;
   border: none;
-  transform: scale(1.1);
   z-index: -1; }
 
 .banner-text {
@@ -72,7 +71,8 @@ a:hover {
 .success {
   position: absolute;
   top: 20%;
-  color: #fff; }
+  color: #fff;
+  margin-left: 2rem; }
 
 .success-head {
   width: 100%;

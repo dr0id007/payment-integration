@@ -29,7 +29,7 @@ paypal.configure({
     "EJm25CWRFWfLGZBIwdHk6w7_Cf18dtG0_vFMyZq2uMjIcPhvkqLWs-fdxdjKZrg56_FEaM8QcM9KxTS6"
 });
 
-app.post("/pay/paypal", (req, res) => {
+app.get("/pay/paypal", async (req, res) => {
   console.log("payment mode:- paypal");
 
   const create_payment_json = {
@@ -63,7 +63,7 @@ app.post("/pay/paypal", (req, res) => {
     ]
   };
 
-  paypal.payment.create(create_payment_json, (error, payment) => {
+ await paypal.payment.create(create_payment_json, (error, payment) => {
     if (error) {
       return error;
     } else {

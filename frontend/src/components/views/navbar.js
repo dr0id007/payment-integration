@@ -36,8 +36,8 @@ export default class navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Payment
+              <NavLink className="nav-link" to="/social">
+                Social
               </NavLink>
             </li>
           </ul>

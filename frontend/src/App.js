@@ -7,6 +7,7 @@ import Navbar from "./components/views/navbar";
 import Error from "./components/views/error";
 import Success from "./components/views/success";
 import Footer from "./components//views/footer";
+import Social from "./components/views/social";
 
 export default class App extends Component {
   render() {
@@ -22,9 +23,9 @@ export default class App extends Component {
             />
           </div>
           <Switch>
+            <Route path={"/social"} component={Social} />
             <Route path={"/about"} component={About} />
             <Route path={"/contact"} component={Contact} />
-            <Route exact path={"/"} component={Home} />
             <Route exact path={"/"} component={Home} />
             <Route path={"/success"} component={Success} />
             <Route component={Error} />
