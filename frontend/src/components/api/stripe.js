@@ -66,7 +66,7 @@ class stripe extends React.Component {
           label="Pay with 💳"
         >
           <h3>
-            <button className="btn mt-3">Pay with 💳</button>
+            <button className="btn mt-3 pay-btn">Pay with 💳</button>
           </h3>
         </Stripe>
       </div>

@@ -28,8 +28,8 @@ class banner extends Component {
       <div className="banner">
         <div className="banner-img" />
         <div className="banner-text">
-          <h1>Hello</h1>
-          <h1>WELCOME</h1>
+          <h1>HELLO</h1>
+          <h1>Bonjour</h1>
           {/* <button className="btn btn-outline-default" onClick={this.onClick}>
             Donate
           </button> */}
